@@ -2126,7 +2126,7 @@ interface BracketOptions<TTeam, TScore, TMData, TUData> {
     if ((!val || !isNumber(val)) && !isNumber(previousVal)) {
       return 0;
     } else if (isNumber(val)) {
-      return parseInt(val, 10);
+      return parseFloat(val);
     }
     return null;
   }
